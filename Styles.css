@@ -1,0 +1,70 @@
+
+.bot{
+    font-size: 20px;
+    font-family: Verdana;
+    border-radius: 20px;
+
+}
+.Titulo{
+    color: rgb(20, 208, 177);
+    background-color: brown;
+    font-family: 'Times New Roman';
+}
+.videos{
+    width: 360px;
+    height: 360px;
+}
+
+#ParrafosPrincipales{
+    margin: 20px;
+    color: #1418F7;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    background-color: #B4F7FA;
+}
+.ParrafosNormales{
+    margin: 20px;
+    color: #6596F7;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    align-content: center;
+    background-color: #B4F7FA;
+}
+.container{
+    width: 120px;
+    height: 50px;
+    margin: center;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: azure;
+}
+.containerimagen{
+    width: 480px;
+    height: 480px;
+    margin: center;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: azure;
+}
+.imagen{
+    width: 440px;
+    height: 460px;
+    border-color: red;
+}
+
+.titulo1{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+.contenido{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    color: #6596F7;
+    margin-right: 60px;
+}

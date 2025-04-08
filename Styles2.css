@@ -1,0 +1,8 @@
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    width: 30%;
+    background-color: rgb(21, 100, 152);
+}
