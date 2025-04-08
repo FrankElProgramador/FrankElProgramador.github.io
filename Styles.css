@@ -5,6 +5,10 @@
     border-radius: 20px;
 
 }
+.bot:hover{
+    background-color: aqua;
+    font-size: 40px;
+}
 .Titulo{
     color: rgb(20, 208, 177);
     background-color: brown;
