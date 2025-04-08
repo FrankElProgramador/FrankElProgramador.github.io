@@ -3,11 +3,18 @@
     font-size: 20px;
     font-family: Verdana;
     border-radius: 20px;
-
+    animation: mover 2s linear infinite;
 }
+
 .bot:hover{
     background-color: aqua;
     font-size: 40px;
+    -webkit-animation: mover 2s ;
+}
+
+@keyframes mover {
+    0% { transform:translateX(0) ;}
+    100% { transform:translateX(250px); -webkit-transform:translateX(250px); -moz-transform:translateX(250px); -ms-transform:translateX(250px); -o-transform:translateX(250px); }
 }
 .Titulo{
     color: rgb(20, 208, 177);
