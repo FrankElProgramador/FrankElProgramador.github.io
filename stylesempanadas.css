@@ -246,6 +246,25 @@ footer {
     text-align: center;
   }
 
+.nombreempanada {
+  font-size: 35px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.precioempanada {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 32px;
+}
+
+.tituloempanadas {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  margin-right: 60px;
+}
+
   .persons {
     grid-template-columns: repeat(1, 1fr);
   } 
