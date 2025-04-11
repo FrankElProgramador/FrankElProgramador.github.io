@@ -1,4 +1,28 @@
 
+.yardobot{
+    font-size: 40px;
+    font-family: cursive;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    animation: moverayardobot 6s linear infinite;
+    -webkit-animation: moverayardobot 6s linear infinite;
+}
+
+.yardobot:hover{
+    font-size: 80px;
+    background-color: peru;
+}
+
+@keyframes moverayardobot {
+    0% { transform:translateY(0) ; -webkit-transform:translateY(0) ; -moz-transform:translateY(0) ; -ms-transform:translateY(0) ; -o-transform:translateY(0) ; }
+    50% { transform: translateX(250px); -webkit-transform: translateX(250px); -moz-transform: translateX(250px); -ms-transform: translateX(250px); -o-transform: translateX(250px); }
+    100% { transform:translateY(-250px); -webkit-transform:translateY(-250px); -moz-transform:translateY(-250px); -ms-transform:translateY(-250px); -o-transform:translateY(-250px); }
+}
+
+
 .bot{
     font-size: 20px;
     font-family: Verdana;
@@ -9,7 +33,6 @@
 .bot:hover{
     background-color: aqua;
     font-size: 40px;
-    -webkit-animation: mover 2s ;
 }
 
 @keyframes mover {

@@ -6,3 +6,9 @@
     width: 30%;
     background-color: rgb(21, 100, 152);
 }
+@media (max-width: 1200px){
+    .contenedor{
+        flex-direction: column;
+    }
+
+}
