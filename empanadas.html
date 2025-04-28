@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="stylesempanadas.css" />
 
     <!-- Simple lightbox CSS -->
-    <link rel="stylesheet" href="simple-lightbox.min.css" />
 
     <!-- Favicons -->   
 
@@ -54,7 +53,6 @@
     <!-- Dark/light theme switcher -->
 
     <!-- Bars -->
-
     <!-- Hero section -->
     <section class="hero">
         <div class="intro-text">
@@ -125,11 +123,26 @@
 
     <!-- Scroll to top button -->
 
-    <!-- Web page script -->
-    <script src="assets/js/app.js"></script>
-
+    
     <!-- Ion icons CDN -->
-    <footer>&copy;2025. All Rights Reserved Talento tech</footer>
+    <footer>
+      <div class="containerForm">
+        <form action="" method="get" class="formulario">
+          <h2>Suscribete</h2>
+          <input type="text" name="name" placeholder="Nombre" required id="NameClient"/>
+          <br />
+          <input type="email" name="email" placeholder="Email" required id="EmailClient" />
+          <button type="submit" id="BtnEnviar" onclick="enviarDatos()">Enviar</button>
+          <p class="privacy-policy">
+            Al enviar este formulario, aceptas nuestra
+            <a href="#" style="color: whitesmoke;">Política de privacidad</a>.
+        </form>
+      </div>
+
+      &copy;2025. All Rights Reserved Talento tech
+    </footer>
+    <!-- Web page script -->
+    <script src="empanadas.js"></script>
   </body>
 </html>
 <!--https://www.freecodecamp.org/news/how-to-make-a-landing-page-with-html-css-and-javascript/#heading-the-project-folder-structure-->
