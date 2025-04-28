@@ -253,6 +253,11 @@ footer {
     width: 300px;
 
   }
+  .containerForm{
+    padding: auto;
+    display: flex;
+
+  }
 }
 
 .nombreempanada {
@@ -274,3 +279,130 @@ footer {
   margin-right: 60px;
 }
 
+.containerForm{
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--primary-color);
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: var(--bold-font);
+  border: 2px solid var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+.containerForm :hover {
+  transform: scale(1.05);
+}
+.containerForm input[type="text"],
+.containerForm input[type="email"], .containerForm input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.containerForm input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.containerForm input[type="submit"]:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+.containerForm input[type="submit"]:active {
+  transform: scale(0.95);
+}
+.containerForm input[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.containerForm input[type="submit"]:disabled:hover {
+  background-color: #ccc;
+  transform: none;
+  box-shadow: none;
+}
+.containerForm input[type="submit"]:disabled:active {
+  transform: none;
+  box-shadow: none;
+}
+.containerForm input[type="submit"]:disabled:focus {
+  outline: none;
+}
+.containerForm input[type="submit"]:disabled:focus-visible {
+  outline: none;
+}
+.containerForm input[type="submit"]:disabled:focus-visible:active {
+  outline: none;
+}
+
+.tituloempanadas h1 {
+ place-items: center;
+  font-size: 40px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tituloempanadas h2 {
+  font-size: 30px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btnEmpanadas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--primary-color);
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: var(--bold-font);
+}
+.btnEmpanadas:hover {
+  transform: scale(1.05);
+  background-color: var(--second-color);
+  color: var(--primary-color);
+}
+
+.empanadas img{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
