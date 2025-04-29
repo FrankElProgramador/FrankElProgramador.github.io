@@ -2,6 +2,10 @@ body {
     font-family: "Roboto", sans-serf;
   }
 
+.contentLetras{
+    text-align: center;
+    margin-top: 50px;
+}
 .mapa{
     margin-left: 105px;
     margin-bottom: 30px;
@@ -9,12 +13,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(94, 183, 17);
 }
+.mapa iframe{
+    border-radius: 20px;
+}
 
 .foto{
     margin-left: 105px;
     margin-bottom: 30px;
     margin-top: 50px;
-    text-align: center;   
+    text-align: center;
+    border-radius: 20px;
+}
+.foto img{
+    border-radius: 20px;
 }
 
 .letras span {
@@ -67,6 +78,7 @@ h1 span:nth-child(11) {
 }
 
 .empanada {
+    margin-top: 50px;
     width: 100px;
     height: 60px;
     background: radial-gradient(circle at 50% 30%, #d9a066, #e67e29);
@@ -89,5 +101,26 @@ h1 span:nth-child(11) {
     100% {
       left: 100%;
       transform: translateY(-50%) rotate(0deg);
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .foto{
+        margin-left: 0px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        text-align: center;   
+    }
+    .foto img{
+        width: 420px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .mapa{
+        margin-left: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(94, 183, 17);
     }
   }
