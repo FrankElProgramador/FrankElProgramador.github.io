@@ -1,3 +1,11 @@
+##Ejecutar estos comandos
+"""
+python -m venv Proyecto3
+pip install pandas
+pip install matplotlib
+pip install flask
+"""
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
