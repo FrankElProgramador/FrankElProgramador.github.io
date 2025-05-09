@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: x-large;
+    color: #000000;
+    color: #000000;
+}
+h2 {
+    font-size: 20px;
+    color: #000000;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    /* background: linear-gradient(135deg, #a5b1c2 0%, #d1d8e0); */
+}
+/* Encabezado 
+header {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+} */
+
+/* Fondo */
+html {
+    text-align: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2c2901 0%, rgb(223, 206, 21) 25%, rgb(247, 245, 107) 50%, rgb(223, 206, 21) 75%,#2c2901 100%);
+    background-attachment: fixed;
+    color: #333;
+}
+/* Disposición de las tarjetas */
+.pricing-table {
+    display: grid;
+/* Tamaño de los botones */
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 60px;
+    max-width: 35rem;
+    width: 100%;
+}
+/* Para modificar vista de las tarjetas */
+.pricing-card {
+    /* Para la carta */
+    background: rgb(243, 216, 158);
+    padding: 60px;
+    border-radius: 50px;
+    /* para la sombra */
+    box-shadow: 15px 15px 40px rgb(8, 0, 255),-1px -1px 20px rgba(157, 0, 255, 0.829);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+/* movimiento de las tarjetas */
+.pricing-card:hover{
+    transform: translateY(-10px);
+}
+/* Para la raya de arriba */
+/* .pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(45deg, #f70808, #2575fc);
+} */
+/* No sé para qué es */
+.pricing-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* para acomodar el título */
+.plan-name { 
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 10px;
+    color:  rgb(217, 255, 0);
+    margin-bottom: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #d308f7 0%, #25fc57 100%);
+    font-family: sans-serif;
+    text-shadow: 0 1px 0 #09012d, 0 2px 0 #09012d, 0 3px 0 #09012d, 0 4px 0 #09012d, 0 5px 0 #09012d, 6px 0 transparent, 7px 0 transparent, 8px 0 transparent, 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+/* Letras saltando */
+span {
+    color:  rgb(217, 255, 0);
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-family: sans-serif;
+    display: inline-block;
+    text-shadow: 0 1px 0 #09012d, 0 2px 0 #09012d, 0 3px 0 #09012d, 0 4px 0 #09012d, 0 5px 0 #09012d, 6px 0 transparent, 7px 0 transparent, 8px 0 transparent, 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.5);
+    animation: bounce 0.4s ease infinite alternate;
+}
+span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+span:nth-child(6) {
+    animation-delay: 1s;
+}
+span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+span:nth-child(11) {
+    animation-delay: 2s;
+}
+span:nth-child(12) {
+    animation-delay: 2.2s;
+}
+span:nth-child(13) {
+    animation-delay: 2.4s;
+}
+span:nth-child(14) {
+    animation-delay: 2.6s;
+}
+span:nth-child(15) {
+    animation-delay: 2.8s;
+}
+span:nth-child(16) {
+    animation-delay: 3s;
+}
+span:nth-child(17) {
+    animation-delay: 3.2s;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-20px);
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 6px 0 transparent, 7px 0 transparent, 8px 0 transparent, 9px 0 transparent, 0 60px 30px rgba(0, 0, 0, 0.5);
+    }
+}
+/* Para el encabezado */
+/* .encabezado {
+    background: #ffffff;
+    color: black;
+    top: 0;
+} */
+/* Para algo será */
+/* .price {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2575fc;
+    margin-bottom: 15px;
+} */
+/* .price span {
+    font-size: 24px;
+    color: #ccc;
+} */
+/* No entendí bien para qué es. Creo que es para darles un margen entre los botones.*/
+.features {
+    list-style: none;
+    margin-bottom: 40px;
+}
+li{
+    padding: 12px 0;
+    color: #666;
+    color: #ccc;
+    border-bottom: 1px solid #666;
+    text-align: center;
+}
+.features li:last-child {
+    border-bottom: none;
+}
+/* Para botón mágico */
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #d308f7 0%, #25fc57 100%);
+    color:  rgb(217, 255, 0);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-shadow: 0 1px 0 #09012d, 0 2px 0 #09012d, 0 3px 0 #09012d, 0 4px 0 #09012d, 0 5px 0 #09012d, 6px 0 transparent, 7px 0 transparent, 8px 0 transparent, 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    list-style: none;
+    margin-bottom: 40px;
+}
+/* movimiento del botón */
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .pricing-table {
+        grid-template-columns: 1fr;
+    }}
+.final {
+    margin-top: 50rem;
+}
