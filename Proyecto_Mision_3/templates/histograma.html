@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de IA</title>
+    <script src="https://kit.fontawesome.com/ed3df3892d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body style="background: linear-gradient(to right, #2c2901 0%, rgb(223, 206, 21) 25%, rgb(247, 245, 107) 50%, rgb(223, 206, 21) 75%,#2c2901 100%);
+    background-attachment: fixed;">
+    <header>
+        <h1>wifi del distrito de Cartagena - HISTOGRAMA</h1>
+        <nav>
+            <ul>
+                <li><a href="/">
+                    <span class="SaltarLetras">I</span>
+                    <span class="SaltarLetras">N</span>
+                    <span class="SaltarLetras">I</span>
+                    <span class="SaltarLetras">C</span>
+                    <span class="SaltarLetras">I</span>
+                    <span class="SaltarLetras">O</span>
+                </a>
+                </li>
+                <li><a href="/barras">
+                    <span class="SaltarLetras">B</span>
+                    <span class="SaltarLetras">A</span>
+                    <span class="SaltarLetras">R</span>
+                    <span class="SaltarLetras">R</span>
+                    <span class="SaltarLetras">A</span>
+                    <span class="SaltarLetras">S</span>
+                </a>
+                </li>
+                <li><a href="/">
+                    <span class="SaltarLetras">D</span>
+                    <span class="SaltarLetras">I</span>
+                    <span class="SaltarLetras">S</span>
+                    <span class="SaltarLetras">P</span>
+                    <span class="SaltarLetras">E</span>
+                    <span class="SaltarLetras">R</span>
+                    <span class="SaltarLetras">S</span>
+                    <span class="SaltarLetras">I</span>
+                    <span class="SaltarLetras">O</span>
+                    <span class="SaltarLetras">N</span>                
+                </a>
+                </li>
+                <li><a href="/contacto">
+                    <span class="SaltarLetras">C</span>
+                    <span class="SaltarLetras">O</span>
+                    <span class="SaltarLetras">N</span>
+                    <span class="SaltarLetras">T</span>
+                    <span class="SaltarLetras">A</span>
+                    <span class="SaltarLetras">C</span>
+                    <span class="SaltarLetras">T</span>
+                    <span class="SaltarLetras">O</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="analysis">
+            <h2>Análisis de Datos</h2>
+
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/histograma1.png') }}" alt="Gráfica de Impacto de la IA">
+            </div>
+
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/histograma2.png') }}" alt="Gráfica de Impacto de la IA">
+            </div>
+
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/histograma3.png') }}" alt="Gráfica de Impacto de la IA">
+            </div>
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/histograma4.png') }}" alt="Gráfica de Impacto de la IA">
+            </div>
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/histograma5.png') }}" alt="Gráfica de Impacto de la IA">
+            </div>
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/histograma6.png') }}" alt="Gráfica de Impacto de la IA">
+            </div>
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/histograma7.png') }}" alt="Gráfica de Impacto de la IA">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="social">
+            <a href="https://www.facebook.com/alcaldiacartagena"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/alcaldiacartagena/#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/alcaldiactg"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Análisis de conexiones. Todos los derechos reservados.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='static/js/app.js') }}"></script>
+</body>
+</html>

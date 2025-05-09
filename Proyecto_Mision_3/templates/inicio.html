@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/ed3df3892d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Dispositivos conectados en las zonas wifi del distrito de Cartagena</h1>
+        <nav>
+            <ul>
+                <nav>
+                    <ul>
+                        <li><a href="/">
+                            <span class="SaltarLetras">I</span>
+                            <span class="SaltarLetras">N</span>
+                            <span class="SaltarLetras">I</span>
+                            <span class="SaltarLetras">C</span>
+                            <span class="SaltarLetras">I</span>
+                            <span class="SaltarLetras">O</span>
+                        </a>
+                        </li>
+                        <li><a href="/barras">
+                            <span class="SaltarLetras">B</span>
+                            <span class="SaltarLetras">A</span>
+                            <span class="SaltarLetras">R</span>
+                            <span class="SaltarLetras">R</span>
+                            <span class="SaltarLetras">A</span>
+                            <span class="SaltarLetras">S</span>
+                        </a>
+                        </li>
+                        <li><a href="/dispersion">
+                            <span class="SaltarLetras">D</span>
+                            <span class="SaltarLetras">I</span>
+                            <span class="SaltarLetras">S</span>
+                            <span class="SaltarLetras">P</span>
+                            <span class="SaltarLetras">E</span>
+                            <span class="SaltarLetras">R</span>
+                            <span class="SaltarLetras">S</span>
+                            <span class="SaltarLetras">I</span>
+                            <span class="SaltarLetras">O</span>
+                            <span class="SaltarLetras">N</span>                
+                        </a>
+                        </li>
+                        <li><a href="/histograma">
+                            <span class="SaltarLetras">H</span>
+                            <span class="SaltarLetras">I</span>
+                            <span class="SaltarLetras">S</span>
+                            <span class="SaltarLetras">T</span>
+                            <span class="SaltarLetras">O</span>
+                            <span class="SaltarLetras">G</span>
+                            <span class="SaltarLetras">R</span>
+                            <span class="SaltarLetras">A</span>
+                            <span class="SaltarLetras">M</span>
+                            <span class="SaltarLetras">A</span>
+                        </a>
+                        </li>
+                        <li><a href="/contacto">
+                            <span class="SaltarLetras">C</span>
+                            <span class="SaltarLetras">O</span>
+                            <span class="SaltarLetras">N</span>
+                            <span class="SaltarLetras">T</span>
+                            <span class="SaltarLetras">A</span>
+                            <span class="SaltarLetras">C</span>
+                            <span class="SaltarLetras">T</span>
+                            <span class="SaltarLetras">O</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Bienvenido a nuestro análisis de datos sobre dispositivos conectados a WI-FI 2024 y 2025</h2>
+            <p>En esta página, exploramos el impacto de dispositivos conectados a WI-FI a lo largo de los años 2024 y 2025.</p>
+            <p>Acompáñanos en este recorrido informativo y visualiza cómo la conexión a WI-FI está transformando el futuro de Cartagena.</p>
+            <img src="{{ url_for('static', filename='images/cartagena1.jpeg') }}" alt="Gráfica de Impacto de uso wi-fi" class="intro-image">
+        </section>
+
+        <section class="objective">
+            <h2>Objetivo del Proyecto</h2>
+            <p>Este proyecto tiene como objetivo analizar el auge del uso de wifi en las zonas de <b>Cartagena de Indias</b> a lo largo de los años y su impacto en diferentes barrios o corregimientos. A través de este análisis, buscamos responder las siguientes preguntas clave:</p>
+            <ul>
+                <li>¿Cómo ha crecido el uso de la WI-FI en diferentes barrios o corregimientos?</li>
+                <li>¿Qué zonas son la de mayor consumo?</li>
+                <li>¿Qué uso por mes y año de la WI-FI?</li>
+                <li>¿Cuáles son las predicciones para el crecimiento del consumo en los próximos 5 años?</li>
+            </ul>
+        </section>
+
+        <section class="summary">
+            <h2>Gráficos Resumen</h2>
+            <div class="chart-container">
+                <img src="{{ url_for('static', filename='images/cartagena2.jpeg') }}" alt="Gráfica de Impacto de uso wi-fi" class="intro-image">
+            </div>
+        </section>
+
+        <section class="facts">
+            <h2>Datos Curiosos sobre el consumo de WI-FI</h2>
+            <p>¿Sabías que el 90% de las personas conectadas por WI-FI son su mayoría por dispositivos móviles?  EL telefono móvil está liderando el acceso al mercado e internet de formas inesperadas.</p>
+            <p>Algunos hechos clave incluyen:</p>
+            <ul>
+                <li>El 90% de las tendencias de consumo creen que el seguirá aumentando para 2026 y 2027.</li>
+                <li>Se estima que el acceso a la WI-FI ayudará a la economía de Cartagena en la próxima década.</li>
+            </ul>
+        </section>
+
+        <section class="call-to-action">
+            <h2>¿Estás listo para hacer parte del cambio en Cartagena?</h2>
+            <a href="https://www.cartagena.gov.co/noticias/cartageneros-cartageneras-aprovechan-zonas-wi-fi-mas-40800-personas-conectaron-internet-gratis-junio" class="button">Aprende más sobre como acceder en tu zona a WI-FI gratuita</a>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="social">
+            <a href="https://www.facebook.com/alcaldiacartagena"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/alcaldiacartagena/#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/alcaldiactg"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Análisis de conexiones. Todos los derechos reservados.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='static/js/app.js') }}"></script>
+</body>
+</html>
+

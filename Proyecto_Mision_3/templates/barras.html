@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <script src="https://kit.fontawesome.com/ed3df3892d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+    <body style="background: linear-gradient(to right, #012c01 0%, rgb(32, 183, 15) 25%, rgb(125, 237, 68) 50%, rgb(32, 183, 15) 75%,#012c01 100%);
+    background-attachment: fixed;">
+        <header>
+            <h1>wifi del distrito de Cartagena - BARRAS</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">
+                        <span class="SaltarLetras">I</span>
+                        <span class="SaltarLetras">N</span>
+                        <span class="SaltarLetras">I</span>
+                        <span class="SaltarLetras">C</span>
+                        <span class="SaltarLetras">I</span>
+                        <span class="SaltarLetras">O</span>
+                    </a>
+                    <li><a href="/dispersion">
+                        <span class="SaltarLetras">D</span>
+                        <span class="SaltarLetras">I</span>
+                        <span class="SaltarLetras">S</span>
+                        <span class="SaltarLetras">P</span>
+                        <span class="SaltarLetras">E</span>
+                        <span class="SaltarLetras">R</span>
+                        <span class="SaltarLetras">S</span>
+                        <span class="SaltarLetras">I</span>
+                        <span class="SaltarLetras">O</span>
+                        <span class="SaltarLetras">N</span>                
+                    </a>
+                    </li>
+                    <li><a href="/histograma">
+                        <span class="SaltarLetras">H</span>
+                        <span class="SaltarLetras">I</span>
+                        <span class="SaltarLetras">S</span>
+                        <span class="SaltarLetras">T</span>
+                        <span class="SaltarLetras">O</span>
+                        <span class="SaltarLetras">G</span>
+                        <span class="SaltarLetras">R</span>
+                        <span class="SaltarLetras">A</span>
+                        <span class="SaltarLetras">M</span>
+                        <span class="SaltarLetras">A</span>
+                    </a>
+                    </li>
+                    <li><a href="/contacto">
+                        <span class="SaltarLetras">C</span>
+                        <span class="SaltarLetras">O</span>
+                        <span class="SaltarLetras">N</span>
+                        <span class="SaltarLetras">T</span>
+                        <span class="SaltarLetras">A</span>
+                        <span class="SaltarLetras">C</span>
+                        <span class="SaltarLetras">T</span>
+                        <span class="SaltarLetras">O</span>
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="analysis">
+                <h2>Análisis de Datos</h2>
+
+                <div class="chart-container">
+                    <img src="{{ url_for('static', filename='images/barras1.png') }}" alt="Gráfica de Impacto de la IA">
+                </div>
+
+                <div class="chart-container">
+                    <img src="{{ url_for('static', filename='images/barras2.png') }}" alt="Gráfica de Impacto de la IA">
+                </div>
+
+                <div class="chart-container">
+                    <img src="{{ url_for('static', filename='images/barras3.png') }}" alt="Gráfica de Impacto de la IA">
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <hr>
+            <div class="social">
+                <a href="https://www.facebook.com/alcaldiacartagena"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/alcaldiacartagena/#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://x.com/alcaldiactg"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Análisis de conexiones. Todos los derechos reservados.</p>
+        </footer>
+        <script src="{{ url_for('static', filename='static/js/app.js') }}"></script>
+    </body>
+    </html>
